@@ -1,0 +1,691 @@
+/* ================================
+   RESET
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+
+    font-family: "Poppins", sans-serif;
+
+    color: #4d3840;
+
+    background:
+        linear-gradient(
+            rgba(55, 28, 39, 0.48),
+            rgba(55, 28, 39, 0.58)
+        ),
+        url("img/fundo.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    padding: 30px 15px;
+}
+
+
+/* ================================
+   PÁGINA
+================================ */
+
+.page {
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+}
+
+
+/* ================================
+   CARD
+================================ */
+
+.card {
+    position: relative;
+
+    width: 100%;
+    max-width: 440px;
+
+    padding: 42px 30px 26px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255, 255, 255, 0.97),
+            rgba(255, 247, 250, 0.96)
+        );
+
+    border-radius: 30px;
+
+    box-shadow:
+        0 30px 80px rgba(25, 10, 18, 0.35);
+
+    border: 1px solid rgba(255, 255, 255, 0.8);
+
+    overflow: hidden;
+
+    backdrop-filter: blur(8px);
+}
+
+
+/* ================================
+   DETALHE SUPERIOR
+================================ */
+
+.top-line {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 6px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #8d4d65,
+            #d7a2b4,
+            #b87b91,
+            #8d4d65
+        );
+}
+
+
+/* ================================
+   PERFIL
+================================ */
+
+.profile {
+    text-align: center;
+}
+
+.profile-photo {
+    width: 128px;
+    height: 128px;
+
+    margin: 0 auto 17px;
+
+    padding: 5px;
+
+    border-radius: 50%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #9b536d,
+            #e0b0bf,
+            #9b536d
+        );
+
+    box-shadow:
+        0 10px 30px rgba(125, 64, 86, 0.2);
+}
+
+.profile-photo img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 4px solid white;
+}
+
+.profile h1 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 32px;
+    line-height: 1.15;
+
+    color: #713d51;
+
+    margin-bottom: 5px;
+}
+
+.profession {
+    color: #a35e78;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+}
+
+.description {
+    max-width: 310px;
+
+    margin: 13px auto 27px;
+
+    color: #817178;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+}
+
+
+/* ================================
+   BOTÕES SOCIAIS
+================================ */
+
+.social-buttons {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 11px;
+
+    margin-bottom: 24px;
+}
+
+.social-button {
+    display: grid;
+
+    grid-template-columns: 42px 1fr 20px;
+
+    align-items: center;
+
+    min-height: 62px;
+
+    padding: 8px 15px;
+
+    border-radius: 16px;
+
+    text-decoration: none;
+
+    color: white;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.social-button:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 10px 25px rgba(60, 30, 40, 0.18);
+}
+
+.social-button:active {
+    transform: translateY(0);
+}
+
+
+/* Ícone */
+
+.social-button .icon {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 34px;
+    height: 34px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.18);
+
+    font-size: 20px;
+}
+
+
+/* Texto */
+
+.social-button span:nth-child(2) {
+    display: flex;
+
+    flex-direction: column;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.social-button small {
+    margin-bottom: 1px;
+
+    font-size: 9px;
+    font-weight: 400;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+
+    opacity: 0.8;
+}
+
+
+/* Seta */
+
+.arrow {
+    font-size: 25px;
+
+    opacity: 0.8;
+}
+
+
+/* WhatsApp */
+
+.whatsapp {
+    background:
+        linear-gradient(
+            135deg,
+            #25b95a,
+            #159447
+        );
+}
+
+
+/* Instagram */
+
+.instagram {
+    background:
+        linear-gradient(
+            135deg,
+            #833ab4,
+            #c13584,
+            #fd1d1d,
+            #fcb045
+        );
+}
+
+
+/* ================================
+   PIX
+================================ */
+
+.pix-card {
+    padding: 22px 18px 19px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #fcf4f7,
+            #f8e9ee
+        );
+
+    border: 1px solid #ead2db;
+
+    border-radius: 21px;
+}
+
+
+/* Cabeçalho PIX */
+
+.pix-heading {
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    margin-bottom: 17px;
+}
+
+.pix-symbol {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 47px;
+    height: 47px;
+
+    flex-shrink: 0;
+
+    border-radius: 14px;
+
+    background: #8c5067;
+
+    color: white;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 0.5px;
+
+    box-shadow:
+        0 6px 15px rgba(115, 54, 76, 0.2);
+}
+
+.pix-heading h2 {
+    font-family: "Playfair Display", serif;
+
+    color: #713d51;
+
+    font-size: 19px;
+
+    margin-bottom: 2px;
+}
+
+.pix-heading p {
+    color: #90757e;
+
+    font-size: 11px;
+}
+
+
+/* QR Code */
+
+.qr-container {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin: 5px 0 10px;
+}
+
+#qrcode {
+    padding: 9px;
+
+    background: white;
+
+    border-radius: 13px;
+
+    box-shadow:
+        0 5px 15px rgba(80, 35, 50, 0.08);
+}
+
+#qrcode img,
+#qrcode canvas {
+    display: block;
+}
+
+.qr-text {
+    text-align: center;
+
+    color: #90757e;
+
+    font-size: 10px;
+
+    margin-bottom: 18px;
+}
+
+
+/* ================================
+   CHAVE PIX
+================================ */
+
+.pix-label {
+    margin-bottom: 6px;
+
+    color: #795260;
+
+    font-size: 10px;
+    font-weight: 600;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+}
+
+.pix-key {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 5px;
+
+    background: white;
+
+    border: 1px solid #e4cbd4;
+
+    border-radius: 12px;
+}
+
+.pix-key span {
+    flex: 1;
+
+    min-width: 0;
+
+    padding-left: 7px;
+
+    color: #5d424c;
+
+    font-size: 11px;
+
+    overflow: hidden;
+
+    white-space: nowrap;
+
+    text-overflow: ellipsis;
+}
+
+.pix-key button {
+    border: none;
+
+    padding: 10px 14px;
+
+    border-radius: 9px;
+
+    background: #8c5067;
+
+    color: white;
+
+    font-family: inherit;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.pix-key button:hover {
+    background: #713d51;
+}
+
+.pix-key button:active {
+    transform: scale(0.96);
+}
+
+
+/* Mensagem */
+
+.copy-message {
+    display: none;
+
+    margin-top: 8px;
+
+    text-align: center;
+
+    color: #588b67;
+
+    font-size: 10px;
+}
+
+.copy-message.active {
+    display: block;
+}
+
+
+/* ================================
+   CONTATO
+================================ */
+
+.contact {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 3px;
+
+    margin-top: 20px;
+
+    color: #806c73;
+
+    font-size: 11px;
+}
+
+.contact div {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+}
+
+
+/* ================================
+   FOOTER
+================================ */
+
+footer {
+    margin-top: 20px;
+}
+
+.footer-line {
+    width: 100%;
+
+    height: 1px;
+
+    margin-bottom: 14px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            #e6d1d8,
+            transparent
+        );
+}
+
+footer p {
+    text-align: center;
+
+    color: #a16b7f;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 13px;
+}
+
+footer span {
+    color: #9b536d;
+}
+
+
+/* ================================
+   TOAST
+================================ */
+
+.toast {
+    position: fixed;
+
+    left: 50%;
+    bottom: 25px;
+
+    transform:
+        translate(-50%, 20px);
+
+    padding: 11px 18px;
+
+    border-radius: 50px;
+
+    background: #4d3840;
+
+    color: white;
+
+    font-size: 12px;
+
+    opacity: 0;
+
+    pointer-events: none;
+
+    transition:
+        opacity 0.25s ease,
+        transform 0.25s ease;
+}
+
+.toast.show {
+    opacity: 1;
+
+    transform:
+        translate(-50%, 0);
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 480px) {
+
+    body {
+        padding: 15px 10px;
+    }
+
+    .card {
+        padding: 38px 20px 23px;
+
+        border-radius: 25px;
+    }
+
+    .profile-photo {
+        width: 115px;
+        height: 115px;
+    }
+
+    .profile h1 {
+        font-size: 29px;
+    }
+
+    .social-button {
+        min-height: 59px;
+    }
+
+    .pix-card {
+        padding: 19px 14px;
+    }
+
+}
+
+
+/* ================================
+   ACESSIBILIDADE
+================================ */
+
+button:focus-visible,
+a:focus-visible {
+    outline: 3px solid #d49aae;
+
+    outline-offset: 3px;
+}
+
+
+/* ================================
+   REDUÇÃO DE MOVIMENTO
+================================ */
+
+@media (prefers-reduced-motion: reduce) {
+
+    * {
+        scroll-behavior: auto !important;
+
+        transition: none !important;
+    }
+}

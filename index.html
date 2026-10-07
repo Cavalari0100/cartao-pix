@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Cartão digital da consultora de beleza"
+    >
+
+    <title>Silvana Spavier | Consultora de Beleza</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- QR Code -->
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
+        defer
+    ></script>
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <main class="page">
+
+        <section class="card">
+
+            <!-- Linha decorativa -->
+            <div class="top-line"></div>
+
+            <!-- PERFIL -->
+            <header class="profile">
+
+                <div class="profile-photo">
+                    <img
+                        src="img/foto.jpg"
+                        alt="Foto da consultora"
+                    >
+                </div>
+
+                <h1>Silvana Machado Spavier</h1>
+
+                <p class="profession">
+                    Consultora de Beleza
+                </p>
+
+                <p class="description">
+                    Beleza, cuidado e autoestima em cada detalhe.
+                </p>
+
+            </header>
+
+
+            <!-- REDES SOCIAIS -->
+            <div class="social-buttons">
+
+                <a
+                    href="https://wa.me/5518996495552"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="social-button whatsapp"
+                >
+                    <span class="icon">◉</span>
+
+                    <span>
+                        <small>Entre em contato</small>
+                        WhatsApp
+                    </span>
+
+                    <span class="arrow">›</span>
+                </a>
+
+
+                <a
+                    href="https://instagram.com/seuinstagram"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="social-button instagram"
+                >
+                    <span class="icon">◎</span>
+
+                    <span>
+                        <small>Siga no Instagram</small>
+                        @silvanaMachado
+                    </span>
+
+                    <span class="arrow">›</span>
+                </a>
+
+            </div>
+
+
+            <!-- PIX -->
+            <section class="pix-card">
+
+                <div class="pix-heading">
+
+                    <div class="pix-symbol">
+                        PIX
+                    </div>
+
+                    <div>
+                        <h2>Pagamento via PIX (CNPJ)</h2>
+
+                        <p>
+                            Rápido, seguro e prático
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <!-- QR CODE -->
+                <div class="qr-container">
+
+                    <div id="qrcode"></div>
+
+                </div>
+
+
+                <p class="qr-text">
+                    Aponte a câmera do celular para o QR Code
+                </p>
+
+
+                <!-- CHAVE -->
+                <div class="pix-key-container">
+
+                    <div class="pix-label">
+                        Chave PIX
+                    </div>
+
+                    <div class="pix-key">
+
+                        <span id="pixKey">
+                            sua-chave-pix@email.com
+                        </span>
+
+                        <button
+                            type="button"
+                            id="copyButton"
+                        >
+                            Copiar
+                        </button>
+
+                    </div>
+
+                    <p
+                        class="copy-message"
+                        id="copyMessage"
+                        aria-live="polite"
+                    >
+                        ✓ Chave PIX copiada!
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- CONTATO -->
+            <div class="contact">
+
+                <div>
+                    <span>📱</span>
+                    (18) 99649-5552
+                </div>
+
+                <div>
+                    <span>📍</span>
+                    Rua Expedicionarios, 6, Centro, Paraguaçu Paulista, SP, CEP 19.700-061, Brasil
+                </div>
+
+            </div>
+
+
+            <!-- RODAPÉ -->
+            <footer>
+
+                <div class="footer-line"></div>
+
+                <p>
+                    Obrigada pela preferência
+                    <span>♡</span>
+                </p>
+
+            </footer>
+
+        </section>
+
+    </main>
+
+
+    <!-- TOAST -->
+    <div
+        id="toast"
+        class="toast"
+        role="status"
+        aria-live="polite"
+    >
+        Chave PIX copiada!
+    </div>
+
+</body>
+</html>
